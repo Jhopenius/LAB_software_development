@@ -1,0 +1,16 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hexlet.txt
+        deleted:    index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+/usr/src/app/code-user$ git restore hexlet.txt
+/usr/src/app/code-user$ git restore index.html 
+/usr/src/app/code-user$ git status
+On branch main
+nothing to commit, working tree clean
+/usr/src/app/code-user$ 

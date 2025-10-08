@@ -1,0 +1,4 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git reset --hard HEAD~2
+HEAD is now at 50395fd add index.html
+/usr/src/app/code-user$ 

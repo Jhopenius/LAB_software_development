@@ -1,0 +1,29 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ rm -f index.html
+/usr/src/app/code-user$ git add index.html 
+/usr/src/app/code-user$ git commit -m "Удален файл index.html"
+[main 016cfc7] Удален файл index.html
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 index.html
+/usr/src/app/code-user$ mv hexlet.txt hexlet2.txt
+/usr/src/app/code-user$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    hexlet.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hexlet2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+/usr/src/app/code-user$ git add .
+/usr/src/app/code-user$ git commit -m "Переименован файл hexlet.txt в hexlet2.txt"
+[main 1b59303] Переименован файл hexlet.txt в hexlet2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename hexlet.txt => hexlet2.txt (100%)
+/usr/src/app/code-user$ git status
+On branch main
+nothing to commit, working tree clean
+/usr/src/app/code-user$ 

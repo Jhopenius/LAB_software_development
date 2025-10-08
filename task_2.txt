@@ -1,0 +1,28 @@
+/usr/src/app$ git clone repos/git-user code-user
+fatal: destination path 'code-user' already exists and is not an empty directory.
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ echo 'I like to change files' >> hexlet.txt
+/usr/src/app/code-user$ echo '<h1>С помощью Git можно писать книги</h1>' > index.html
+/usr/src/app/code-user$ git add hexlet.txt
+/usr/src/app/code-user$ git add index.html
+/usr/src/app/code-user$ git config --global user.email "aaa@gmail.com"
+/usr/src/app/code-user$ git config --global user.name "Vasechkin V"
+/usr/src/app/code-user$ git commit -m 'Changes hexlet.txt and index.html'
+[main 6c00119] Changes hexlet.txt and index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+/usr/src/app/code-user$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+gg/usr/src/app$ git status
+fatal: not a git repository (or any parent up to mount point /usr/src)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean

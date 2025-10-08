@@ -1,0 +1,16 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git log -p --oneline -- todo.md
+7c2fcf8 (HEAD) add index.html
+diff --git a/todo.md b/todo.md
+new file mode 100644
+index 0000000..cfd0cb3
+--- /dev/null
++++ b/todo.md
+@@ -0,0 +1,2 @@
++* Прочитать статью в документации [git-checkout](https://git-scm.com/docs/git-checkout)
++* Прокачать навыки перемещения по истории
+\ No newline at end of file
+
+/usr/src/app/code-user$ git checkout 7c2fcf8
+HEAD is now at 7c2fcf8 add index.html
+/usr/src/app/code-user$ 

@@ -1,0 +1,8 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ echo "Hello, Hexlet!" > hexlet.txt 
+/usr/src/app/code-user$ echo "<h1>Мама, я коммичу</h1>" > index.html 
+/usr/src/app/code-user$ git add .
+/usr/src/app/code-user$ git commit -m "Add hexlet.txt and index.html "
+On branch main
+nothing to commit, working tree clean
+/usr/src/app/code-user$ 

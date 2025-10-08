@@ -1,0 +1,64 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        quotes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+/usr/src/app/code-user$ echo 'WWW' > todo.md
+/usr/src/app/code-user$ git add .
+/usr/src/app/code-user$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   quotes.txt
+        new file:   todo.md
+
+/usr/src/app/code-user$ git stash
+Saved working directory and index state WIP on main: 89d91f8 add index.html
+/usr/src/app/code-user$ echo 'stash не трогает новые файлы, которые еще не добавлены в индекс.' >> hexlet.txt
+/usr/src/app/code-user$ git add hexlet.txt 
+/usr/src/app/code-user$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hexlet.txt
+
+/usr/src/app/code-user$ git commit -m 'Modified hexlet.txt'
+[main 39ddbec] Modified hexlet.txt
+ 1 file changed, 1 insertion(+)
+/usr/src/app/code-user$ git stash pop
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   quotes.txt
+        new file:   todo.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Dropped refs/stash@{0} (492ac65fd96ea651fae7342a4e7507dec4da3fc0)
+/usr/src/app/code-user$ git add .
+/usr/src/app/code-user$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   quotes.txt
+        new file:   todo.md
+
+/usr/src/app/code-user$ git commit -m 'Modified index.html, add quotes.txt and todo.md'
+[main 37cfec9] Modified index.html, add quotes.txt and todo.md
+ 3 files changed, 7 insertions(+)
+ create mode 100644 quotes.txt
+ create mode 100644 todo.md
+/usr/src/app/code-user$ 

@@ -1,0 +1,75 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git log -p
+commit a83d69c31e5d9a9b0e0ccc7db7b02a435eb6c2de (HEAD -> main)
+Author: Student <support@hexlet.io>
+Date:   Tue Oct 13 22:05:47 2020 +0000
+
+    update hexlet2.txt
+
+diff --git a/hexlet2.txt b/hexlet2.txt
+index 43e2f65..264a802 100644
+--- a/hexlet2.txt
++++ b/hexlet2.txt
+@@ -1 +1 @@
+-Hello Hexlet!
++Hexlet Hello!
+
+commit 0ac5139b0c7a69ada91e685eeac6ab5a50995016
+Author: Student <support@hexlet.io>
+Date:   Mon Oct 12 22:39:20 2020 +0000
+
+    update files
+
+diff --git a/hexlet.txt b/hexlet2.txt
+similarity index 100%
+rename from hexlet.txt
+rename to hexlet2.txt
+diff --git a/index.html b/index.html
+deleted file mode 100644
+index 1e7490d..0000000
+--- a/index.html
++++ /dev/null
+@@ -1 +0,0 @@
+-<h1>Мама, я коммичу</h1>
+
+commit e511117979ed453211a1e41ddb0a35810b0c2bda
+Author: Student <support@hexlet.io>
+Date:   Mon Oct 5 20:38:58 2020 +0000
+
+    add index.html
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..1e7490d
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1 @@
++<h1>Мама, я коммичу</h1>
+
+commit aebb4a2bbc881acb03eb35c80a653ffdc354515f
+Author: Student <support@hexlet.io>
+Date:   Mon Oct 5 20:36:14 2020 +0000
+
+    add hexlet.txt
+
+diff --git a/hexlet.txt b/hexlet.txt
+new file mode 100644
+index 0000000..43e2f65
+--- /dev/null
++++ b/hexlet.txt
+@@ -0,0 +1 @@
++Hello Hexlet!
+/usr/src/app/code-user$ git diff HEAD HEAD~1
+diff --git a/hexlet2.txt b/hexlet2.txt
+index 264a802..43e2f65 100644
+--- a/hexlet2.txt
++++ b/hexlet2.txt
+@@ -1 +1 @@
+-Hexlet Hello!
++Hello Hexlet!
+/usr/src/app/code-user$ echo 'Hello Hexlet!' > hexlet2.txt
+/usr/src/app/code-user$ git add hexlet2.txt
+/usr/src/app/code-user$ git commit -m 'FIX hexlet2.txt'
+[main 15540d9] FIX hexlet2.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+/usr/src/app/code-user$ 

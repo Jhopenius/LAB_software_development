@@ -1,0 +1,42 @@
+/usr/src/app$ cd code-user/
+/usr/src/app/code-user$ git nano .gitignore
+git: 'nano' is not a git command. See 'git --help'.
+
+The most similar commands are
+        annotate
+        daemon
+/usr/src/app/code-user$ nano .gitignore
+/usr/src/app/code-user$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   notes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+/usr/src/app/code-user$ git rm --cached notes.txt
+rm 'notes.txt'
+/usr/src/app/code-user$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    notes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+/usr/src/app/code-user$ git commit -m 'delete notes.txt from repository'
+[main b39386c] delete notes.txt from repository
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 notes.txt
+/usr/src/app/code-user$ git add .gitignore 
+/usr/src/app/code-user$ git commit -m 'add .gitignore'
+[main ebaaba9] add .gitignore
+ 1 file changed, 5 insertions(+)
+ create mode 100644 .gitignore
+/usr/src/app/code-user$
